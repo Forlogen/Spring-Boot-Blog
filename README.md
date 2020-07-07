@@ -177,8 +177,7 @@ server:
 - 用户类：User
 
 它们之间的关系如下所示：
-
-https://typora-forlogen.oss-cn-shenzhen.aliyuncs.com/img/Blog%E7%B1%BB%E5%9B%BE.png
+[Blog类图](/imgs/Blog类图.png)
 
 
 除了不同实体类之间的关系，由于博客评论这里设计为两级结构，因此父评论和下面的子评论还存在一对多的关系。
