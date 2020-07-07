@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog bone</title>
+    <!-- 导入CSS样式链接 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+
+<body>
+
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <!--博客名-->
+                <h2 class="ui blue header item">Forlogen</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small home icon"></i></i>首页</a>
+                <a href="#" class="active m-item item m-mobile-hide"><i class="small idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small clone icon"></i>归档</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small info icon"></i>关于我</a>
+                <!--搜索框-->
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted transparent input m-margin-tb-tiny">
+                        <input type="text" placeholder="Search....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <br>
+    <br>
+
+    <!--底部-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <a href="https://github.com/" class="ui github circular icon button" data-content="点击跳转GitHub"><i class="github icon"></i></a>
+                        <a href="https://forlogen.blog.csdn.net/" class="ui csdn circular icon button" data-content="点击跳转CSDN" ><i class="copyright outline icon"></i></a>
+                        <a href="#" class="ui email circular icon button" data-content="18dyliang@stu.edu.cn"><i class="envelope icon"></i></a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced " >友情链接</h4>
+                    <div class="ui inverted link list">
+                        <a href="https://www.csdn.net/" class="item m-text-thin">CSDN</a>
+                        <a href="https://github.com/" class="item m-text-thin">GitHUb</a>
+                        <a href="https://www.cnblogs.com/" class="item m-text-thin">博客园</a>
+                        <a href="https://www.zhihu.com/" class="item m-text-thin">知乎</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced " >博客信息</h4>
+                    <div id="blog-message">
+                        <div class="ui inverted center aligned link list" style="align-content: center;margin-top: 10px">
+                            <div class="center aligned m-text-thin">
+                                文章总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 篇
+                            </div>
+                            <div class="m-text-thin">
+                                访问总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 次
+                            </div>
+                            <div class="m-text-thin">
+                                评论总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条
+                            </div>
+                            <div class="m-text-thin">
+                                留言总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+                </div>
+            </div>
+
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2016 - 2017 Forlogen Designed by Forlogen</p>
+        </div>
+    </footer>
+
+    <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+    <!--/*/</th:block>/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <!--/*/</th:block>/*/-->
+
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        // 显示邮箱
+        $('.email').popup();
+
+        // 显示CSDN
+        $('.csdn').popup();
+
+        // 显示github
+        $('.github').popup();
+
+        // 导航栏显示
+        var waypoint = new Waypoint({
+            element: document.getElementById('waypoint'),
+            handler: function(direction) {
+                if (direction == 'down') {
+                    $('#nav').show(500);
+                } else {
+                    $('#nav').hide(500);
+                }
+                console.log('Scrolled to waypoint!  ' + direction);
+            }
+        })
+    </script>
+</body>
+</html>

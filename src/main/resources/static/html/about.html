@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <!-- 导入CSS样式链接 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../css/me.css">
+</head>
+
+<body>
+
+    <nav class="ui inverted attached segment m-padded-tf-minim-shadow-small">
+        <!--使用container来进行设备适配-->
+        <div class="ui container">
+            <!--菜单栏-->
+            <div class="ui inverted secondary stackable menu">
+                <!--博客名-->
+                <h2 class="ui blue header item">Forlogen</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small home icon"></i></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small clone icon"></i>归档</a>
+                <a href="#" class="active m-item item m-mobile-hide"><i class="small info icon"></i>关于我</a>
+                <!--搜索框-->
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted transparent input m-margin-tb-tiny">
+                        <input type="text" placeholder="Search....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!--中间内容-->
+    <div  class="m-container m-padded-tb-big">
+        <div class="ui container">
+
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <div class="ui segment">
+                        <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text">Forlogen，一个独立开发者，折腾在 0 和 1 世界的大叔；一个终身学习者，誓将学习无限循环. 希望结识可以共同成长的小伙伴.</p>
+                        <p class="m-text">热爱编程，喜欢折腾，正在探索高效学习编程技术的方法...</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic left pointing label">编程</div>
+                        <div class="ui orange basic left pointing label">写作</div>
+                        <div class="ui orange basic left pointing label">思考</div>
+                        <div class="ui orange basic left pointing label">运动</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">JavaScript</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Node</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">React</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">RN</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">MYSQL</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">...</div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                        <a href="#" class="ui qq circular icon button" data-content="865729312" data-position="bottom center"><i class="qq icon"></i></a>
+                    </div>
+
+                    <div class="ui wechat-qr flowing popup transition hidden">
+                        <img src="../static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--底部-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <a href="https://github.com/" class="ui github circular icon button" data-content="点击跳转GitHub"><i class="github icon"></i></a>
+                        <a href="https://forlogen.blog.csdn.net/" class="ui csdn circular icon button" data-content="点击跳转CSDN" ><i class="copyright outline icon"></i></a>
+                        <a href="#" class="ui email circular icon button" data-content="18dyliang@stu.edu.cn"><i class="envelope icon"></i></a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced " >友情链接</h4>
+                    <div class="ui inverted link list">
+                        <a href="https://www.csdn.net/" class="item m-text-thin">CSDN</a>
+                        <a href="https://github.com/" class="item m-text-thin">GitHUb</a>
+                        <a href="https://www.cnblogs.com/" class="item m-text-thin">博客园</a>
+                        <a href="https://www.zhihu.com/" class="item m-text-thin">知乎</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced " >博客信息</h4>
+                    <div id="blog-message">
+                        <div class="ui inverted center aligned link list" style="align-content: center;margin-top: 10px">
+                            <div class="center aligned m-text-thin">
+                                文章总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 篇
+                            </div>
+                            <div class="m-text-thin">
+                                访问总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 次
+                            </div>
+                            <div class="m-text-thin">
+                                评论总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条
+                            </div>
+                            <div class="m-text-thin">
+                                留言总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+                </div>
+            </div>
+
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2016 - 2017 Forlogen Designed by Forlogen</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<script>
+
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    // 显示邮箱
+    $('.email').popup();
+
+    // 显示CSDN
+    $('.csdn').popup();
+
+    // 显示github
+    $('.github').popup();
+
+    // 导航栏显示
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function(direction) {
+            if (direction == 'down') {
+                $('#nav').show(500);
+            } else {
+                $('#nav').hide(500);
+            }
+            console.log('Scrolled to waypoint!  ' + direction);
+        }
+    })
+</script>
+</body>
+</html>
