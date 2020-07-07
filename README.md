@@ -4,7 +4,7 @@
 
 个人博客所提供的功能大致如下图所示：
 
-https://typora-forlogen.oss-cn-shenzhen.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%84%91%E5%9B%BE.jpg
+[功能概览](https://typora-forlogen.oss-cn-shenzhen.aliyuncs.com/img/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%84%91%E5%9B%BE.jpg)
 
 功能整体上分为两大部分：
 
