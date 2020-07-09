@@ -90,21 +90,18 @@
                         </div>
                     </div>
                 </div>
-
-                <!--footer-->
-                <div class="ui bottom attached segment">
+                <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
                     <div class="ui middle aligned two column grid">
                         <div class="column">
-                            <a href="#" class="ui mini teal basic button">上一页</a>
+                            <a href="#" th:href="@{/(page=${page.number}-1)}"  th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
                         </div>
                         <div class="right aligned column">
-                            <a href="#" class="ui mini teal basic button">下一页</a>
+                            <a href="#" th:href="@{/(page=${page.number}+1)}"  th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
                         </div>
                     </div>
                 </div>
 
             </div>
-
             <!--右边的top-->
             <div class="five wide column">
                 <!--分类-->
@@ -115,8 +112,7 @@
                                 <i class="idea icon"></i>分类
                             </div>
                             <div class="right aligned column">
-                                <a href="#" th:href="@{types/-1}" target="_blank">more <i
-                                        class="angle double right icon"></i></a>
+                                <a href="#" th:href="@{types/-1}" target="_blank">more <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                     </div>
@@ -140,8 +136,7 @@
                                 <i class="tags icon"></i>标签
                             </div>
                             <div class="right aligned column">
-                                <a href="#" th:href="@{tags/-1}" target="_blank">more <i
-                                        class="angle double right icon"></i></a>
+                                <a href="#" th:href="@{tags/-1}" target="_blank">more <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                     </div>

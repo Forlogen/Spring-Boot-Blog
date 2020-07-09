@@ -9,20 +9,16 @@ import lombok.*;
     - 是否属于推荐文章
 
  */
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @ToString
 public class BlogQuery {
-    @Getter
-    @Setter
+
     private String title;
 
-    @Getter
-    @Setter
     private Long typeId;
 
-    @Getter
-    @Setter
     private boolean recommend;
 }

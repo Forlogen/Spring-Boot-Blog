@@ -773,3 +773,4 @@ public class BlogServiceImpl implements BlogService {
 ```
 
 至此，博客管理的增、删、改、查就已经全部实现。
+

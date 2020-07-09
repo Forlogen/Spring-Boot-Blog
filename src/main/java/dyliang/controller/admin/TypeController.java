@@ -71,6 +71,7 @@ public class TypeController {
     }
 
 
+    // 类别编辑的处理逻辑
     @PostMapping("/types/{id}")
     public String editPost(@Valid Type type, BindingResult result,@PathVariable Long id, RedirectAttributes attributes) {
         Type type1 = typeService.getTypeByName(type.getName());
